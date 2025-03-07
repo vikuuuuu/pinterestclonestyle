@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.box1{
+   max-width: 1200px;
+   margin: 0 auto;
+   column-count: 4;
+
+}
+
+.box2{
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+.box2 figure{
+    margin: 0;
+    position: relative;
+}
+.box2 img{
+    width: 100%;
+    border-radius: 5px;
+}
