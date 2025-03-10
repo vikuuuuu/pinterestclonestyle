@@ -8,19 +8,24 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Task: 07/03/2025</h1>
+    <div class="header">
+      <a href="#">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">Create</a>
+      <a href="#">Setting</a>
+    </div>
     <div class="box1">
-      <div class="box2">
+      <div class="box2" data-aos="flip-left">
         <figure>
           <img src="./img/0d5f7bbd-dea5-4127-9605-a9992d311b8a.jpg" alt="img" />
         </figure>
       </div>
-      <div class="box2">
+      <div class="box2" data-aos="fade-up">
         <figure>
           <img src="./img/2eb82e5f-1abe-484e-b03a-f7b04b946e17.jpg" alt="img" />
         </figure>
       </div>
-      <div class="box2">
+      <div class="box2" data-aos="fade-up">
         <figure>
           <img
             src="./img/Serious Young Boy with Glasses Cartoon Illustration.jpg"
@@ -28,7 +33,7 @@
           />
         </figure>
       </div>
-      <div class="box2">
+      <div class="box2" data-aos="fade-up">
         <figure>
           <img src="./img/349dde23-dac0-45aa-8dde-78b80e2949a7.jpg" alt="img" />
         </figure>
@@ -94,10 +99,106 @@
           <img src="./img/woofi!!.jpg" alt="img" />
         </figure>
       </div>
+      <!-- Add similar `data-aos="fade-up"` to other images as well -->
+    </div>
+    <div class="card-box" data-aos="flip-left">
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <div class="card">
+        <h4>Nature</h4>
+      </div>
+      <!-- Other cards here -->
+    </div>
+    <div class="form-container">
+      <form>
+        <h2>Contact form</h2>
+        <div>
+          <label class="form-label" for="first">First Name</label>
+          <input class="form-input" type="text" />
+        </div>
+        <div>
+          <label class="form-label" for="last">Last Name</label>
+          <input class="form-input" type="text" />
+        </div>
+        <div>
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" />
+        </div>
+        <div>
+          <label class="form-label" for="phone">Phone No</label>
+          <input class="form-input" type="number" />
+        </div>
+        <div>
+          <label class="form-label" for="dob">Date of Birth</label>
+          <input class="form-input" type="date" />
+        </div>
+        <div>
+          <label class="form-label" for="first">Gender</label>
+          <span>
+            <input
+              type="radio"
+              class="gender-input"
+              id="Male"
+              name="Gender"
+              value="Male"
+            />
+            <label class="gender-label" for="Male">Male</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              class="gender-input"
+              id="Female"
+              value="Female"
+              name="Gender"
+            />
+            <label class="gender-label" for="Female">Female</label>
+          </span>
+        </div>
+        <button >Submit</button>
+      </form>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        offset: 2, // Start the animation when 200px is scrolled
+        delay: 0, // Delay before animation starts
+        duration: 1000, // Animation duration in ms
+        easing: "ease", // Animation easing
+        once: true, // Run animation only once
+        mirror: false, // Do not mirror the animation when scrolling back
+      });
     </script>
   </body>
 </html>
